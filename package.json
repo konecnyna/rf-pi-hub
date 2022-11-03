@@ -1,0 +1,37 @@
+{
+  "name": "rf-pi-hub",
+  "version": "1.0.0",
+  "description": "Raspberry Pi RF Hub",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./bin/post-install.sh",
+    "start": "npm run build && node dist/server.js",
+    "build": "tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konecnyna/rf-pi-hub.git"
+  },
+  "keywords": [
+    "rpi"
+  ],
+  "author": "konecnyna@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konecnyna/rf-pi-hub/issues"
+  },
+  "homepage": "https://github.com/konecnyna/rf-pi-hub#readme",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/typescript": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
